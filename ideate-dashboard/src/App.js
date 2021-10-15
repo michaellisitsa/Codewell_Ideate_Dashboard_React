@@ -1,6 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
-import TopNav from './TopNav'
+import logo from "./logo.svg";
+import "./App.css";
+import TopNav from "./components/TopNav";
 
 function App() {
   return (

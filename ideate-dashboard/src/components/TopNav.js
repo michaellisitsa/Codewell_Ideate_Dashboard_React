@@ -1,15 +1,15 @@
 import React from "react";
-import logo from "./Assets/Logo.svg";
-import notificationIcon from "./Assets/Notification.svg";
-import userIcon from "./Assets/User.svg";
-import userAvatar from "./Assets/User Avatar.svg";
-import hamburgerIcon from "./Assets/Hamburger Menu.svg";
+import logo from "../Assets/Logo.svg";
+import notificationIcon from "../Assets/Notification.svg";
+import userIcon from "../Assets/User.svg";
+import userAvatar from "../Assets/User Avatar.svg";
+import hamburgerIcon from "../Assets/Hamburger Menu.svg";
 import TopNavIcon from "./TopNavIcon";
 
 class TopNav extends React.Component {
   handleIconClick = (e) => {
     e.preventDefault();
-    console.log("icon clicked from TopNav");
+    console.log(e.target.outerHTML);
   };
   render() {
     return (
