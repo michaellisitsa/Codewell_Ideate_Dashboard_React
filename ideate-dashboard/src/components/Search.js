@@ -4,6 +4,9 @@ import "../styles/Search.css";
 
 class Search extends React.Component {
   render() {
+    const searchIconObj = {
+      backgroundImage: `url(${searchIcon})`,
+    };
     const icon = this.props.icon;
     return (
       <form action="#" className="search">
@@ -13,7 +16,7 @@ class Search extends React.Component {
           id="search-reports"
           className="search-reports"
           placeholder="Search Reports"
-          style={{ backgroundImage: `url(${searchIcon})` }}
+          style={searchIconObj}
         />
       </form>
     );

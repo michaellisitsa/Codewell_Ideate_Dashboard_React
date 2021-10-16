@@ -1,3 +1,63 @@
 :root {
   --sidebar: 12.5em;
 }
+
+.menu {
+  border-radius: 10px;
+  border: 0;
+}
+
+.menu {
+  width: var(--sidebar);
+  background: #4a35c9;
+  display: none;
+}
+
+.menu a,
+.menu p {
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+}
+
+.menu a:hover {
+  transition: all 200ms ease-in;
+  text-decoration-color: white;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .menu__items {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: var(--top-nav-height);
+    gap: 1.5em;
+    padding-top: 1.5em;
+    color: #d0cbf0;
+  }
+
+  .help-divider {
+    left: 50%;
+    margin-left: 25%;
+    width: 50%;
+    height: 1px;
+    background: #d0cbf0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu {
+    height: calc(100vh - var(--top-nav-height) - 2 * 1.5em);
+    position: fixed;
+  }
+
+  .menu__items {
+    position: static;
+  }
+}

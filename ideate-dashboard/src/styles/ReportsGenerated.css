@@ -1,0 +1,57 @@
+@media (min-width: 768px) {
+  .reports-generated__wrapper {
+    background: #4a35c9;
+    z-index: 1;
+    border: 0;
+    border-radius: 5px;
+  }
+
+  .reports-generated {
+    height: 123px;
+    background-color: #190781;
+    margin: 0 1em 1em;
+    padding: 1em;
+  }
+
+  .reports-generated > h1 {
+    font-weight: 700;
+    font-size: 1em;
+    color: white;
+    margin-bottom: 5px;
+  }
+
+  .reports-generated > p {
+    font-weight: 400;
+    font-size: 0.75em;
+    color: #bfb4f9;
+  }
+
+  .progress-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+  }
+
+  .progress-indicator p {
+    color: white;
+    font-size: 0.75em;
+    font-weight: 700;
+  }
+
+  .progress-bar {
+    background: #bfb4f9;
+    border: 0;
+    border-radius: 3.5px;
+    width: 100%;
+    height: 7px;
+  }
+
+  .progress-completed {
+    background: white;
+    border: 0;
+    border-radius: 3.5px;
+    width: 60%;
+    height: 100%;
+  }
+}

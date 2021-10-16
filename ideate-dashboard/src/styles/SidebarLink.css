@@ -1,0 +1,11 @@
+.menu__links {
+  color: #d0cbf0;
+}
+
+@media (min-width: 768px) {
+  .menu__link-container {
+    display: flex;
+    padding-left: 3.125em;
+    gap: 0.5em;
+  }
+}
