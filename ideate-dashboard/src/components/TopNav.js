@@ -5,6 +5,8 @@ import userIcon from "../Assets/User.svg";
 import userAvatar from "../Assets/User Avatar.svg";
 import hamburgerIcon from "../Assets/Hamburger Menu.svg";
 import TopNavIcon from "./TopNavIcon";
+import Search from "./Search";
+import "../styles/TopNav.css";
 
 class TopNav extends React.Component {
   handleIconClick = (e) => {
@@ -18,16 +20,7 @@ class TopNav extends React.Component {
           <img src={logo} alt="" />
         </a>
         <div className="searchUser">
-          <form action="#" className="search">
-            <input
-              type="text"
-              name="search-reports"
-              id="search-reports"
-              className="search-reports"
-              placeholder="Search Reports"
-              // style="background-image: url('Assets/Search.svg')"
-            />
-          </form>
+          <Search />
           <div className="user">
             <TopNavIcon
               icon={notificationIcon}

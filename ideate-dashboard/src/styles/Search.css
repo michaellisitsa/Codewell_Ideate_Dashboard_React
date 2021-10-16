@@ -1,0 +1,20 @@
+.search {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .search {
+    display: block;
+  }
+
+  .search-reports {
+    border: 0;
+    padding: 9px 50px;
+    background-repeat: no-repeat;
+    background-position: 1em 50%;
+  }
+
+  .search input[type="text"] {
+    background-color: #f3f3f4;
+  }
+}
