@@ -8,6 +8,32 @@ import helpIcon from "../Assets/Help.svg";
 import ReportsGenerated from "./ReportsGenerated";
 
 class Sidebar extends React.Component {
+  state = { counter: 0 };
+  constructor(props) {
+    super(props);
+  }
+  componentDidMount() {
+    this.time = new Date();
+    this.timerID = setInterval(() => this.tick(), 100);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timerID);
+  }
+
+  tick() {
+    var timeout = 100;
+    if (this.state.counter == timeout) {
+      this.setState({
+        counter: 0,
+      });
+    } else {
+      this.setState({
+        counter: this.state.counter + 1,
+      });
+    }
+  }
+
   render() {
     return (
       <aside className="menu" id="menu">
@@ -19,7 +45,7 @@ class Sidebar extends React.Component {
           <SidebarLink icon={helpIcon} name="Help" />
         </nav>
         <div id="bot-sidebar-marker" className="bot-sidebar-marker"></div>
-        <ReportsGenerated />
+        <ReportsGenerated percentage={this.state.counter} />
       </aside>
     );
   }
