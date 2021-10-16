@@ -2,6 +2,10 @@
   color: #d0cbf0;
 }
 
+a.selected-link {
+  color: white;
+}
+
 @media (min-width: 768px) {
   .menu__link-container {
     display: flex;

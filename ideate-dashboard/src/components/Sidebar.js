@@ -21,8 +21,8 @@ class Sidebar extends React.Component {
     clearInterval(this.timerID);
   }
 
-  tick() {
-    var timeout = 100;
+  tick = () => {
+    let timeout = 100;
     if (this.state.counter == timeout) {
       this.setState({
         counter: 0,
@@ -32,7 +32,7 @@ class Sidebar extends React.Component {
         counter: this.state.counter + 1,
       });
     }
-  }
+  };
 
   render() {
     return (
