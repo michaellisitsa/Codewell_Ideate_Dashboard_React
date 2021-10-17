@@ -12,3 +12,33 @@ body {
   padding-inline-start: 0;
   box-sizing: inherit;
 }
+
+.navGraphReferral-container {
+  display: flex;
+  gap: 1.5em;
+  margin: 1.5em;
+}
+
+.graphReferral {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1.5em;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .graphReferral {
+    flex-direction: column;
+    flex: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .graphReferral {
+    flex-direction: row;
+    flex: 1;
+    margin-left: calc(var(--sidebar) + 1.5em);
+    align-items: center;
+  }
+}

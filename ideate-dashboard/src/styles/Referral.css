@@ -1,0 +1,86 @@
+.referral {
+  display: flex;
+  background-color: #f1f1fd;
+  align-items: center;
+  overflow: hidden;
+  height: 100%;
+}
+
+.referral__header {
+  font-size: 1.5em;
+  font-weight: 700px;
+}
+
+.referral__form {
+  padding: 37px 50px;
+  flex: 1;
+}
+
+.referral__email-form {
+  display: flex;
+  gap: 9px;
+  margin-top: 1em;
+}
+
+.referral__email-input {
+  flex: 1;
+  font-size: 0.875em;
+  font-weight: 400;
+  width: 100%;
+}
+
+.referral__body {
+  color: #4f4f4f;
+  margin-top: 0.5em;
+}
+
+.referral__email-input {
+  padding: 0.75em 0 0.75em 1em;
+  flex: 1;
+}
+
+.referral__email-button {
+  background-color: #4a35c9;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  padding: 0.75em 1.875em;
+  width: 93px;
+}
+
+.referral__terms {
+  color: #4f4f4f;
+}
+
+.referral__image {
+  display: none;
+  width: 25%;
+  height: 100%;
+  background-size: cover;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+@media (min-width: 768px) {
+  .referral__form {
+    padding: 96px 50px;
+  }
+
+  .referral__image {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .referral {
+    flex: 1;
+  }
+
+  .referral__form {
+    width: 60%;
+  }
+
+  .referral__image {
+    width: 40%;
+  }
+}

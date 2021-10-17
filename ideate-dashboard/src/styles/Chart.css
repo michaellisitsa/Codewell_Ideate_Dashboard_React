@@ -1,0 +1,87 @@
+.graph {
+  background-color: white;
+  padding: 24px;
+  height: 100%;
+}
+
+.graph__header {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #e0e6ed;
+  padding-bottom: 1.5em;
+}
+
+.graph__title {
+  flex: 1;
+}
+
+.filter {
+  border: solid 1px #e0e6ed;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+}
+
+.filter:hover {
+  transition: all 200ms ease-in;
+  text-decoration-color: black;
+}
+
+.graph__statSummary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  padding-top: 1.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.graph__statSummary h2 {
+  font-size: 0.875em;
+  font-weight: 400;
+  color: #595959;
+}
+
+.graph__stat {
+  border: none; /* Removes the default CSS styling for the <input> HTML tag in browsers */
+  border-right: 1px solid #e0e6ed; /* Creates border to right of each .graph__stat class */
+  text-align: left; /* OPTIONAL - styling to center input text */
+  margin: 0 5px; /* OPTIONAL - gives you spacing for visual appeal */
+  flex: 1;
+}
+
+.graph__stat:last-child {
+  border: none; /* Remove border from the last .flex-item child in the form */
+}
+
+.graph__statNumbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green p {
+  color: #3e8671;
+  font-size: 18px;
+  margin-right: 1em;
+}
+
+.green small {
+  color: #61b984;
+  font-size: 14px;
+}
+
+.red p {
+  color: #863e3e;
+  font-size: 18px;
+  margin-right: 1em;
+}
+
+.red small {
+  color: #b96161;
+  font-size: 14px;
+}

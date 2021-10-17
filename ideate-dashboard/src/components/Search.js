@@ -7,7 +7,6 @@ class Search extends React.Component {
     const searchIconObj = {
       backgroundImage: `url(${searchIcon})`,
     };
-    const icon = this.props.icon;
     return (
       <form action="#" className="search">
         <input
