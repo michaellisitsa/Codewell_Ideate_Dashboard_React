@@ -2,6 +2,10 @@
   color: #d0cbf0;
 }
 
+.menu__links:hover {
+  cursor: pointer;
+}
+
 a.selected-link {
   color: white;
 }
