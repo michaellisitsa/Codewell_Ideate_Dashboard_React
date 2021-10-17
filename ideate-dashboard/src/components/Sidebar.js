@@ -82,14 +82,7 @@ class Sidebar extends React.Component {
     });
     return (
       <aside className="menu" id="menu">
-        <nav className="menu__items">
-          {sidebarComponents}
-          {/* <SidebarLink icon={overviewIcon} name="Overview" />
-          <SidebarLink icon={reportIcon} name="Report" />
-          <SidebarLink icon={settingsIcon} name="Settings" />
-          <div className="menu__link-container help-divider"></div>
-          <SidebarLink icon={helpIcon} name="Help" /> */}
-        </nav>
+        <nav className="menu__items">{sidebarComponents}</nav>
         <div id="bot-sidebar-marker" className="bot-sidebar-marker"></div>
         <ReportsGenerated percentage={this.state.counter} />
       </aside>

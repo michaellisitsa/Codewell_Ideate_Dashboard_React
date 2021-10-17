@@ -7,7 +7,13 @@ function App() {
   return (
     <div className="App">
       <TopNav />
-      <Sidebar />
+      <div
+        className="navGraphReferral-container"
+        id="navGraphReferral-container"
+      >
+        <Sidebar />
+        <article className="graphReferral"></article>
+      </div>
     </div>
   );
 }
