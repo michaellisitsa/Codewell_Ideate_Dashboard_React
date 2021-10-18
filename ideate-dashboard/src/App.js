@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import TopNav from "./components/TopNav";
 import Sidebar from "./components/Sidebar";
-import Chart from "./components/Chart";
+import ChartContainer from "./components/ChartContainer";
 import "./App.css";
 import Referral from "./components/Referral";
 
@@ -15,7 +15,7 @@ function App() {
       >
         <Sidebar />
         <article className="graphReferral">
-          <Chart />
+          <ChartContainer />
           <Referral />
         </article>
       </div>

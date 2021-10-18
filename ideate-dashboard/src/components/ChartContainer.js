@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import "../styles/Chart.css";
+import "../styles/ChartContainer.css";
 import filterIcon from "../Assets/Filter Icon.svg";
 import upArrowIcon from "../Assets/Up Arrow.svg";
 import downArrowIcon from "../Assets/Down Arrow.svg";
 
-export class Chart extends Component {
+export class ChartContainer extends Component {
   render() {
     return (
       <div className="graph">
@@ -44,4 +44,4 @@ export class Chart extends Component {
   }
 }
 
-export default Chart;
+export default ChartContainer;
