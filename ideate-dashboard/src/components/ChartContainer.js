@@ -3,6 +3,7 @@ import "../styles/ChartContainer.css";
 import filterIcon from "../Assets/Filter Icon.svg";
 import upArrowIcon from "../Assets/Up Arrow.svg";
 import downArrowIcon from "../Assets/Down Arrow.svg";
+import Chart from "../components/Chart";
 
 export class ChartContainer extends Component {
   render() {
@@ -39,6 +40,7 @@ export class ChartContainer extends Component {
             </div>
           </div>
         </header>
+        <Chart />
       </div>
     );
   }

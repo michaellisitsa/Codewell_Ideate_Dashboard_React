@@ -1,0 +1,5 @@
+.chart-js-container {
+  display: flex;
+  position: relative;
+  flex: 1;
+}

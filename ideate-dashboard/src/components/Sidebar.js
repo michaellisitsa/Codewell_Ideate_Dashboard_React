@@ -23,7 +23,7 @@ class Sidebar extends React.Component {
 
   tick = () => {
     let timeout = 100;
-    if (this.state.counter == timeout) {
+    if (this.state.counter === timeout) {
       this.setState({
         counter: 0,
       });

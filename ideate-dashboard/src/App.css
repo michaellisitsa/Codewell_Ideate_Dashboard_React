@@ -37,7 +37,6 @@ body {
 @media (min-width: 1024px) {
   .graphReferral {
     flex-direction: row;
-    flex: 1;
     margin-left: calc(var(--sidebar) + 1.5em);
     align-items: center;
   }

@@ -2,6 +2,9 @@
   background-color: white;
   padding: 24px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 99%;
 }
 
 .graph__header {
@@ -84,4 +87,10 @@
 .red small {
   color: #b96161;
   font-size: 14px;
+}
+
+@media (min-width: 1024px) {
+  .graph {
+    width: 49%;
+  }
 }

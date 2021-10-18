@@ -16,27 +16,25 @@
   flex: 1;
 }
 
+.referral__body {
+  color: #4f4f4f;
+  margin-top: 0.5em;
+}
+
 .referral__email-form {
   display: flex;
   gap: 9px;
   margin-top: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .referral__email-input {
   flex: 1;
   font-size: 0.875em;
   font-weight: 400;
-  width: 100%;
-}
-
-.referral__body {
-  color: #4f4f4f;
-  margin-top: 0.5em;
-}
-
-.referral__email-input {
+  min-width: 100px;
   padding: 0.75em 0 0.75em 1em;
-  flex: 1;
 }
 
 .referral__email-button {
@@ -73,7 +71,7 @@
 
 @media (min-width: 1024px) {
   .referral {
-    flex: 1;
+    width: 49%;
   }
 
   .referral__form {
